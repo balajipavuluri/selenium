@@ -14,7 +14,7 @@ chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--no-sandbox")
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
 
-
+@st.cache
 
 st.title('codetantra login bot')
 with st.form(key="form1"):
